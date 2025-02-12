@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+{% block head %}
+   {% load static %}
+   <link rel="stylesheet" href="{% static 'accounts.css' %}" />
+{% endblock head %}
+
+{% block content %}
+   <div>
+      <form action="" method="POST" class="form-container">
+         {% csrf_token %}
+         {{ form.as_p }}
+         <input type="submit" value="Register">
+         
+         <p class="login-or-register">have an account?</p>
+         <a href="{% url 'login_view' %}">Login</a>
+      </form>
+
+      
+   </div>
+
+{% endblock content %}

@@ -1,0 +1,72 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment directories
+.venv/
+env/
+venv/
+
+# Django-specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3-journal
+.devdbrc
+
+
+# Django secret keys or settings files
+*.env
+.env
+config/secrets/
+
+# Static and media files (if using default storage locations)
+static/
+media/
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+.sublime-project
+.sublime-workspace
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Test and coverage files
+*.coverage
+*.hypothesis/
+.nox/
+.coverage/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Backup files
+*~
+*.bak
+*.swp
+
+# Node.js dependencies (if applicable)
+node_modules/
+
+# Package manager lock files (optional)
+yarn.lock
+package-lock.json
+
+# Django migrations (optional, usually better to keep migrations tracked)
+# migrations/ should be ignored if you want to ignore the migration files (not recommended)
+#migrations/
+
+# Other files you don't want to upload
+*.pem
+*.key
+*.crt
