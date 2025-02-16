@@ -1,11 +1,11 @@
-{% extends 'main.html' %}
+{% extends 'base.html' %}
 
 {% block head %}
    {% load static %}
    <link rel="stylesheet" href="{% static 'accounts.css' %}" />
 {% endblock head %}
 
-{% block content %}
+{% block body %}
    <div>
       <form action="" method="POST" class="form-container">
          {% csrf_token %}
@@ -19,4 +19,4 @@
       
    </div>
 
-{% endblock content %}
+{% endblock body %}

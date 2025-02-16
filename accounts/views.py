@@ -8,8 +8,6 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 
 from .forms import CustomUserCreationForm
 
-from entries.models import Entry
-
 # Create your views here.
 
 def register_view(request):

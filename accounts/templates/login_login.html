@@ -1,17 +1,17 @@
-{% extends  'main.html' %}
+{% extends  'base.html' %}
 
 {% block head %}
    {% load static %}
    <link rel="stylesheet" href="{% static 'accounts.css' %}" />
 {% endblock head %}
 
-{% block content %}
+{% block body %}
    <div>
       <form action="" method="POST" class="form-container">
          {% csrf_token %}
          <label for="username">Username:</label>
          {{ form.username }}
-   
+         <br>
          <label for="password">Password:</label>
          {{ form.password }}
          
@@ -19,10 +19,7 @@
 
          <p class="login-or-register">dont have an account?</p>
          <a href="{% url 'register_view' %}">Register</a>
-         
       </form>
-
-      
    </div>
 
-{% endblock content %}
+{% endblock body %}
